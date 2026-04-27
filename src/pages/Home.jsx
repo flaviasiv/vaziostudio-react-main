@@ -191,7 +191,7 @@ const Home = () => {
           transition={{ duration: 0.9, ease: 'easeOut' }}
         >
           <img
-            src="/assets/profile-lucas-moraes.jpg"
+            src="/assets/"
             alt="Vazio Design Studio"
             draggable="false"
           />
