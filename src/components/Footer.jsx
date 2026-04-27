@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className="contactlink">
           <p>
-            Planning to start a project or just to say hi? Reach out by email and I'll do my best to reply within 24 hours!
+            Planning to start a project or just to say hi? Reach out by email and we'll do our best to reply within 24 hours!
           </p>
           {/* <form className="email-form" onSubmit={handleSubmit}>
             <div className="email-input-wrapper">
@@ -66,7 +66,7 @@ const Footer = () => {
             </button>              
         </div>
       </div>
-      <h1 className="signatureH">LUCAS.M</h1>
+      <h1 className="signatureH">VAZIO</h1>
     </footer>
   );
 };

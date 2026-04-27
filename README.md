@@ -1,6 +1,6 @@
-# Lucas Moraes - Portfolio (React)
+# Vazio Design Studio - Portfolio (React)
 
-Portfólio de Lucas Moraes - Creative Designer & Art Director
+Site do Vazio Design Studio - Creative Design & Art Direction
 
 ## Migração para React
 
@@ -17,7 +17,7 @@ Este projeto foi migrado de HTML/CSS/JS estático para React com Vite.
 ## Estrutura do Projeto
 
 ```
-lucas-moraes-react/
+vazio-design-studio/
 ├── public/
 │   ├── assets/          # Imagens, vídeos e GIFs dos projetos
 │   └── fonts/           # Fontes customizadas
@@ -42,7 +42,7 @@ lucas-moraes-react/
 ### Desenvolvimento
 
 ```bash
-cd lucas-moraes-react
+cd vazio-design-studio
 npm install
 npm run dev
 ```
@@ -84,10 +84,10 @@ npm run preview
 
 ## Autor
 
-**Lucas Moraes** - Creative Designer & Art Director
+**Vazio Design Studio** - Creative Design & Art Direction
 
 **Desenvolvimento**: Flavia Sigoli
 
 ---
 
-© 2023 Lucas Moraes. Todos os direitos reservados.
+© 2024 Vazio Design Studio. Todos os direitos reservados.

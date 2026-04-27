@@ -12,14 +12,14 @@ const Botteghe = () => {
   return (
     <>
       <Helmet>
-        <title>Botteghe Del Caffè - Branding & Art Direction | Lucas Moraes</title>
+        <title>Botteghe Del Caffè - Branding & Art Direction | Vazio Design Studio</title>
         <meta name="description" content="Branding and Art Direction for Botteghe Del Caffè, an environmentally conscious cosmetics brand utilizing green coffee oil from a family farm in southern Minas Gerais." />
         <meta property="og:title" content="Botteghe Del Caffè - Branding & Art Direction" />
         <meta property="og:description" content="Branding for Botteghe Del Caffè, an environmentally conscious cosmetics brand utilizing green coffee oil." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://lucaslucas.work/botteghe" />
+        <meta property="og:url" content="https://vaziodesignstudio.com/botteghe" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lucaslucas.work/botteghe" />
+        <link rel="canonical" href="https://vaziodesignstudio.com/botteghe" />
       </Helmet>
 
       <div>

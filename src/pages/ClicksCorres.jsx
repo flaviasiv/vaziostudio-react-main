@@ -12,14 +12,14 @@ const ClicksCorres = () => {
   return (
     <>
       <Helmet>
-        <title>Clicks & Corres - Personal Photography Project | Lucas Moraes</title>
+        <title>Clicks & Corres - Personal Photography Project | Vazio Design Studio</title>
         <meta name="description" content="Personal photography project documenting running during COVID-19 pandemic. All footage was captured on a phone over months of running the same route in the north side of São Paulo." />
         <meta property="og:title" content="Clicks & Corres - Personal Photography Project" />
         <meta property="og:description" content="Photography project documenting running during COVID-19 pandemic in São Paulo." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://lucaslucas.work/clickscorres" />
+        <meta property="og:url" content="https://vaziodesignstudio.com/clickscorres" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lucaslucas.work/clickscorres" />
+        <link rel="canonical" href="https://vaziodesignstudio.com/clickscorres" />
       </Helmet>
 
       <div className='corresclicks-page'>

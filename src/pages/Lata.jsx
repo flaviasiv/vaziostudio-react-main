@@ -12,14 +12,14 @@ const Lata = () => {
   return (
     <>
       <Helmet>
-        <title>Lata 05 - Secret Event Branding & Art Direction | Lucas Moraes</title>
+        <title>Lata 05 - Secret Event Branding & Art Direction | Vazio Design Studio</title>
         <meta name="description" content="Branding and Art Direction for Lata 05, a secret event with no fixed location, date or theme, featuring invitation-only first editions and surprise performances as the main way to spark curiosity." />
         <meta property="og:title" content="Lata 05 - Secret Event Branding & Art Direction" />
         <meta property="og:description" content="Branding for Lata 05, a secret artistic movement bringing an overlap of musical genres to energize national art." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://lucaslucas.work/lata" />
+        <meta property="og:url" content="https://vaziodesignstudio.com/lata" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lucaslucas.work/lata" />
+        <link rel="canonical" href="https://vaziodesignstudio.com/lata" />
       </Helmet>
 
       <div className='lata-page'>

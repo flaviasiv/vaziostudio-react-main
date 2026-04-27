@@ -77,10 +77,6 @@ function ProjectCard({ project, index }) {
 }
 
 const Home = () => {
-  // Calculate age based on birth year 1995
-  const birthYear = 1995;
-  const currentYear = new Date().getFullYear();
-  const age = currentYear - birthYear;
 
   // Scroll to top
   const scrollToTop = (e) => {
@@ -174,17 +170,17 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Lucas Moraes - Designer & Art Director | São Paulo, Brazil</title>
-        <meta name="description" content="Multidisciplinary designer and art director with over 10 years of experience collaborating with agencies, studios, and brands on visual identity, strategic design, product development, and more." />
-        <meta property="og:title" content="Lucas Moraes - Designer & Art Director" />
-        <meta property="og:description" content="Multidisciplinary designer and art director with over 10 years of experience in visual identity, strategic design, and product development." />
+        <title>Vazio Design Studio - Design & Art Direction | São Paulo, Brazil</title>
+        <meta name="description" content="Vazio é um estúdio de design com propósito. Identidade visual, direção de arte e desenvolvimento de produto — São Paulo, Brasil." />
+        <meta property="og:title" content="Vazio Design Studio - Design & Art Direction" />
+        <meta property="og:description" content="Estúdio de design com propósito. Identidade visual, direção de arte e desenvolvimento de produto." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lucaslucas.work/" />
-        <meta property="og:image" content="https://lucaslucas.work/assets/profile-lucas-moraes.jpg" />
+        <meta property="og:url" content="https://vaziodesignstudio.com/" />
+        <meta property="og:image" content="https://vaziodesignstudio.com/assets/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lucas Moraes - Designer & Art Director" />
-        <meta name="twitter:description" content="Multidisciplinary designer and art director with over 10 years of experience." />
-        <link rel="canonical" href="https://lucaslucas.work/" />
+        <meta name="twitter:title" content="Vazio Design Studio - Design & Art Direction" />
+        <meta name="twitter:description" content="Estúdio de design com propósito — São Paulo, Brasil." />
+        <link rel="canonical" href="https://vaziodesignstudio.com/" />
       </Helmet>
 
       <main className="home-page">
@@ -196,7 +192,7 @@ const Home = () => {
         >
           <img
             src="/assets/profile-lucas-moraes.jpg"
-            alt="Lucas profile picture"
+            alt="Vazio Design Studio"
             draggable="false"
           />
         </motion.div>
@@ -207,7 +203,7 @@ const Home = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
         >
           <p>
-            LUCAS MORAES // {age} <br />
+            VAZIO DESIGN STUDIO <br />
             (BASED IN SÃO PAULO, BRAZIL)
           </p>
         </motion.div>
@@ -231,7 +227,7 @@ const Home = () => {
           <h2 className="sobreT1 Th1">// ABOUT</h2>
           <p className="sobreT3">(ENG)</p>
           <p className="sobreT4">
-            Multidisciplinary designer and art director with over 10 years of experience collaborating with agencies, studios, and brands on a variety of cool projects involving visual identity, strategic design, product development, and more.
+            A small studio with a big purpose. We collaborate with agencies, brands, and founders on visual identity, strategic design, and product development — always with intention.
           </p>
         </FadeUp>
 

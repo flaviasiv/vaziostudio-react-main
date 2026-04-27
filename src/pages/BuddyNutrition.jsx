@@ -15,14 +15,14 @@ const BuddyNutrition = () => {
   return (
     <>
       <Helmet>
-        <title>Buddy Nutrition - Branding, Packaging & Design System | Lucas Moraes</title>
+        <title>Buddy Nutrition - Branding, Packaging & Design System | Vazio Design Studio</title>
         <meta name="description" content="Branding, Packaging, and Design System for Buddy Nutrition, a canine supplement brand that creates high-quality formulas with personalized recommendations for pet health and well-being." />
         <meta property="og:title" content="Buddy Nutrition - Branding, Packaging & Design System" />
         <meta property="og:description" content="Complete branding project for Buddy Nutrition, a canine supplement brand with personalized recommendations." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://lucaslucas.work/buddynutrition" />
+        <meta property="og:url" content="https://vaziodesignstudio.com/buddynutrition" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lucaslucas.work/buddynutrition" />
+        <link rel="canonical" href="https://vaziodesignstudio.com/buddynutrition" />
       </Helmet>
 
       <div className='buddy-page'>

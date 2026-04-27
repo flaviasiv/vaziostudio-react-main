@@ -12,14 +12,14 @@ const AstroPay = () => {
   return (
     <>
       <Helmet>
-        <title>AstroPay - Motion Graphics & Art Direction | Lucas Moraes</title>
+        <title>AstroPay - Motion Graphics & Art Direction | Vazio Design Studio</title>
         <meta name="description" content="Motion Graphics and Art Direction for AstroPay, a global digital payments company based in London with users across more than 150 countries, known for connecting people and businesses through fast, secure and accessible solutions." />
         <meta property="og:title" content="AstroPay - Motion Graphics & Art Direction" />
         <meta property="og:description" content="Motion Graphics for AstroPay, a global digital payments company connecting people and businesses through secure solutions." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://lucaslucas.work/astropay" />
+        <meta property="og:url" content="https://vaziodesignstudio.com/astropay" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lucaslucas.work/astropay" />
+        <link rel="canonical" href="https://vaziodesignstudio.com/astropay" />
       </Helmet>
 
       <div className="astropay-page">

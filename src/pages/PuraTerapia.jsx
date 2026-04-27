@@ -12,14 +12,14 @@ const PuraTerapia = () => {
   return (
     <>
       <Helmet>
-        <title>Pura Terapia - Branding, Art Direction & Web Design | Lucas Moraes</title>
+        <title>Pura Terapia - Branding, Art Direction & Web Design | Vazio Design Studio</title>
         <meta name="description" content="Identidade visual, site institucional e automação de atendimento para a Pura Terapia®, plataforma de telemedicina especializada em cannabis medicinal." />
         <meta property="og:title" content="Pura Terapia - Branding, Art Direction & Web Design" />
         <meta property="og:description" content="Identidade visual, site institucional e automação de atendimento para a Pura Terapia®, plataforma de telemedicina especializada em cannabis medicinal." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://lucaslucas.work/pura-terapia" />
+        <meta property="og:url" content="https://vaziodesignstudio.com/pura-terapia" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://lucaslucas.work/pura-terapia" />
+        <link rel="canonical" href="https://vaziodesignstudio.com/pura-terapia" />
       </Helmet>
 
       <div className="puraterapia-page">

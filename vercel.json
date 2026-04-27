@@ -22,10 +22,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.lucaslucas.work"
+          "value": "www.vaziodesignstudio.com"
         }
       ],
-      "destination": "https://lucaslucas.work/:path*",
+      "destination": "https://vaziodesignstudio.com/:path*",
       "permanent": true
     }
   ]
