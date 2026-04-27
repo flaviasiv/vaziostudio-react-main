@@ -17,9 +17,9 @@ const AstroPay = () => {
         <meta property="og:title" content="AstroPay - Motion Graphics & Art Direction" />
         <meta property="og:description" content="Motion Graphics for AstroPay, a global digital payments company connecting people and businesses through secure solutions." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://vaziodesignstudio.com/astropay" />
+        <meta property="og:url" content="https://www.vaziodesignstudio.com/astropay" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://vaziodesignstudio.com/astropay" />
+        <link rel="canonical" href="https://www.vaziodesignstudio.com/astropay" />
       </Helmet>
 
       <div className="astropay-page">

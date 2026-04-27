@@ -22,10 +22,10 @@
       "has": [
         {
           "type": "host",
-          "value": "www.vaziodesignstudio.com"
+          "value": "vaziodesignstudio.com"
         }
       ],
-      "destination": "https://vaziodesignstudio.com/:path*",
+      "destination": "https://www.vaziodesignstudio.com/:path*",
       "permanent": true
     }
   ]

@@ -20,9 +20,9 @@ const BuddyNutrition = () => {
         <meta property="og:title" content="Buddy Nutrition - Branding, Packaging & Design System" />
         <meta property="og:description" content="Complete branding project for Buddy Nutrition, a canine supplement brand with personalized recommendations." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://vaziodesignstudio.com/buddynutrition" />
+        <meta property="og:url" content="https://www.vaziodesignstudio.com/buddynutrition" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://vaziodesignstudio.com/buddynutrition" />
+        <link rel="canonical" href="https://www.vaziodesignstudio.com/buddynutrition" />
       </Helmet>
 
       <div className='buddy-page'>

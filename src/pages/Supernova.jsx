@@ -17,10 +17,10 @@ const Supernova = () => {
         <meta property="og:title" content="Supernova Entertainment - Branding & Art Direction" />
         <meta property="og:description" content="Branding and Art Direction for Supernova Entertainment, a music label in São Paulo marked by the astronomical rise of its artists." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://vaziodesignstudio.com/supernova" />
-        <meta property="og:image" content="https://vaziodesignstudio.com/assets/supernova/Frame2.png" />
+        <meta property="og:url" content="https://www.vaziodesignstudio.com/supernova" />
+        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/supernova/Frame2.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="canonical" href="https://vaziodesignstudio.com/supernova" />
+        <link rel="canonical" href="https://www.vaziodesignstudio.com/supernova" />
       </Helmet>
 
       <div className="supernova-page">
