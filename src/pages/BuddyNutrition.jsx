@@ -129,7 +129,7 @@ const BuddyNutrition = () => {
               </motion.h6>
               <motion.h5 variants={fadeUp}>(ENG)</motion.h5>
               <motion.p className="about1" id="about1" variants={fadeUp}>
-                Product naming is 100% clear, which facilitates understanding of what the product is—especially compared to existing pet health products on the market.
+                Product naming is 100% clear, which facilitates understanding of what the product is, especially compared to existing pet health products on the market.
               </motion.p>
             </FadeUp>
             <FadeUp className="aboutgrid about2">
@@ -205,7 +205,7 @@ const BuddyNutrition = () => {
               <motion.h6 variants={fadeUp}>//VISUAL SYSTEM</motion.h6>
               <motion.h5 variants={fadeUp}>(ENG)</motion.h5>
               <motion.p className="about1" id="about1" variants={fadeUp}>
-                Based on the most common design system structures for interfaces, I developed a restricted visual system that grants autonomy to other departments whose daily demands used to consume a significant amount of time—despite being simple and lacking visual challenges, they took up execution time.
+                Based on the most common design system structures for interfaces, I developed a restricted visual system that grants autonomy to other departments whose daily demands used to consume a significant amount of time, despite being simple and lacking visual challenges, they took up execution time.
               </motion.p>
             </FadeUp>
             <FadeUp className="aboutgrid about2">

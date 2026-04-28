@@ -100,7 +100,7 @@ const Home = () => {
       title: 'PURA TERAPIA',
       category: 'Branding, Art Direction, Web Design',
       description:
-        'Pura Terapia® is a telemedicine platform specializing in medical cannabis. Brand identity, institutional website and WhatsApp automation — built from scratch.',
+        'Pura Terapia® is a telemedicine platform specializing in medical cannabis. Brand identity, institutional website and WhatsApp automation - built from scratch.',
       gif: '/assets/home/thumbnail-puraterapia.gif',
       link: '/pura-terapia',
       buttonText: 'VIEW CASE',
@@ -171,7 +171,7 @@ const Home = () => {
     <>
       <Helmet>
         <title>Vazio Design Studio - Design & Art Direction | São Paulo, Brazil</title>
-        <meta name="description" content="Vazio é um estúdio de design com propósito. Identidade visual, direção de arte e desenvolvimento de produto — São Paulo, Brasil." />
+        <meta name="description" content="Vazio é um estúdio de design com propósito. Identidade visual, direção de arte e desenvolvimento de produto - São Paulo, Brasil." />
         <meta property="og:title" content="Vazio Design Studio - Design & Art Direction" />
         <meta property="og:description" content="Estúdio de design com propósito. Identidade visual, direção de arte e desenvolvimento de produto." />
         <meta property="og:type" content="website" />
@@ -179,7 +179,7 @@ const Home = () => {
         <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Vazio Design Studio - Design & Art Direction" />
-        <meta name="twitter:description" content="Estúdio de design com propósito — São Paulo, Brasil." />
+        <meta name="twitter:description" content="Estúdio de design com propósito - São Paulo, Brasil." />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/" />
       </Helmet>
 
@@ -227,7 +227,7 @@ const Home = () => {
           <h2 className="sobreT1 Th1">// ABOUT</h2>
           <p className="sobreT3">(ENG)</p>
           <p className="sobreT4">
-            A small studio with a big purpose. We collaborate with agencies, brands, and founders on visual identity, strategic design, and product development — always with intention.
+            A small studio with a big purpose. We collaborate with agencies, brands, and founders on visual identity, strategic design, and product development - always with intention.
           </p>
         </FadeUp>
 
