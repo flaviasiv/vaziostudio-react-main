@@ -45,6 +45,38 @@ function AppContent({ theme, toggleTheme }) {
 
     lenisRef.current = lenis;
 
+    const handleKeyScroll = (e) => {
+      const tag = document.activeElement?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+
+      const scrollY = window.scrollY;
+      const pageH = window.innerHeight;
+      const docH = document.body.scrollHeight;
+
+      switch (e.key) {
+        case 'End':
+          e.preventDefault();
+          lenis.scrollTo(docH);
+          break;
+        case 'Home':
+          e.preventDefault();
+          lenis.scrollTo(0);
+          break;
+        case 'PageDown':
+          e.preventDefault();
+          lenis.scrollTo(scrollY + pageH);
+          break;
+        case 'PageUp':
+          e.preventDefault();
+          lenis.scrollTo(scrollY - pageH);
+          break;
+        default:
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyScroll);
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -53,6 +85,7 @@ function AppContent({ theme, toggleTheme }) {
     requestAnimationFrame(raf);
 
     return () => {
+      window.removeEventListener('keydown', handleKeyScroll);
       lenis.destroy();
     };
   }, []);
