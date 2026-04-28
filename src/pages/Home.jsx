@@ -227,7 +227,7 @@ const Home = () => {
           <h2 className="sobreT1 Th1">// ABOUT</h2>
           <p className="sobreT3">(ENG)</p>
           <p className="sobreT4">
-            A small studio with a big purpose. We collaborate with agencies, brands, and founders on visual identity, strategic design, and product development - always with intention.
+            A small studio with a big purpose. We collaborate with agencies, brands, and founders on visual identity, strategic design, and product development. Always with intention.
           </p>
         </FadeUp>
 
@@ -251,8 +251,7 @@ const Home = () => {
           </h2>
           <p className="sobreT3 sobre2T3">(PT/BR)</p>
           <p className="sobreT4 sobre2T4">
-            Designer multidisciplinar e diretor de arte
-com mais de 10 anos de experiência colaborando em agências, estúdios e marcas desenvolvendo uma variedade de projetos legais envolvendo identidade visual, design estratégico, desenvolvimento de produtos e por aí vai.
+            Um pequeno estúdio com um grande propósito. Colaboramos com agências, marcas e fundadores em identidade visual, design estratégico e desenvolvimento de produtos. Sempre com objetivo.
           </p>
           <h2 className="sobreT1">
             <div className="sobreT6-m">
