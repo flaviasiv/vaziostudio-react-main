@@ -12,13 +12,18 @@ const PuraTerapia = () => {
   return (
     <>
       <Helmet>
-        <title>Pura Terapia - Branding, Art Direction & Web Design | Vazio Design Studio</title>
+        <title>Pura Terapia - Branding, Direção de Arte & Web Design | Vazio Design Studio</title>
         <meta name="description" content="Identidade visual, site institucional e automação de atendimento para a Pura Terapia®, plataforma de telemedicina especializada em cannabis medicinal." />
-        <meta property="og:title" content="Pura Terapia - Branding, Art Direction & Web Design" />
+        <meta property="og:title" content="Pura Terapia - Branding, Direção de Arte & Web Design" />
         <meta property="og:description" content="Identidade visual, site institucional e automação de atendimento para a Pura Terapia®, plataforma de telemedicina especializada em cannabis medicinal." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/pura-terapia" />
+        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/pura-terapia/frame1.png" />
+        <meta property="og:locale" content="pt_BR" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pura Terapia - Branding, Direção de Arte & Web Design" />
+        <meta name="twitter:description" content="Identidade visual e site institucional para a Pura Terapia®, telemedicina em cannabis medicinal." />
+        <meta name="twitter:image" content="https://www.vaziodesignstudio.com/assets/pura-terapia/frame1.png" />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/pura-terapia" />
       </Helmet>
 

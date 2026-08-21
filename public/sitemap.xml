@@ -6,57 +6,64 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://lucaslucas.work/</loc>
-  <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  <loc>https://www.vaziodesignstudio.com/</loc>
+  <lastmod>2026-08-21</lastmod>
   <priority>1.00</priority>
   <changefreq>weekly</changefreq>
 </url>
 
 <url>
-  <loc>https://lucaslucas.work/supernova</loc>
-  <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  <loc>https://www.vaziodesignstudio.com/supernova</loc>
+  <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
-  <loc>https://lucaslucas.work/botteghe</loc>
-  <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  <loc>https://www.vaziodesignstudio.com/botteghe</loc>
+  <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
-  <loc>https://lucaslucas.work/buddynutrition</loc>
-  <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  <loc>https://www.vaziodesignstudio.com/buddynutrition</loc>
+  <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
-  <loc>https://lucaslucas.work/lata</loc>
-  <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  <loc>https://www.vaziodesignstudio.com/lata</loc>
+  <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
-  <loc>https://lucaslucas.work/clickscorres</loc>
-  <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  <loc>https://www.vaziodesignstudio.com/clickscorres</loc>
+  <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
-  <loc>https://lucaslucas.work/estadio97</loc>
-  <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  <loc>https://www.vaziodesignstudio.com/estadio97</loc>
+  <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
-  <loc>https://lucaslucas.work/astropay</loc>
-  <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+  <loc>https://www.vaziodesignstudio.com/astropay</loc>
+  <lastmod>2026-08-21</lastmod>
+  <priority>0.80</priority>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.vaziodesignstudio.com/pura-terapia</loc>
+  <lastmod>2026-08-21</lastmod>
   <priority>0.80</priority>
   <changefreq>monthly</changefreq>
 </url>

@@ -12,13 +12,18 @@ const Botteghe = () => {
   return (
     <>
       <Helmet>
-        <title>Botteghe Del Caffè - Branding & Art Direction | Vazio Design Studio</title>
-        <meta name="description" content="Branding and Art Direction for Botteghe Del Caffè, an environmentally conscious cosmetics brand utilizing green coffee oil from a family farm in southern Minas Gerais." />
-        <meta property="og:title" content="Botteghe Del Caffè - Branding & Art Direction" />
-        <meta property="og:description" content="Branding for Botteghe Del Caffè, an environmentally conscious cosmetics brand utilizing green coffee oil." />
+        <title>Botteghe Del Caffè - Branding & Direção de Arte | Vazio Design Studio</title>
+        <meta name="description" content="Branding e Direção de Arte para a Botteghe Del Caffè, uma marca de cosméticos ambientalmente consciente que utiliza óleo de café verde de uma fazenda familiar no sul de Minas Gerais." />
+        <meta property="og:title" content="Botteghe Del Caffè - Branding & Direção de Arte" />
+        <meta property="og:description" content="Branding para a Botteghe Del Caffè, marca de cosméticos ambientalmente consciente que utiliza óleo de café verde." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/botteghe" />
+        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/botteghe/Frame3.png" />
+        <meta property="og:locale" content="pt_BR" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Botteghe Del Caffè - Branding & Direção de Arte" />
+        <meta name="twitter:description" content="Branding para a Botteghe Del Caffè, marca de cosméticos com óleo de café verde." />
+        <meta name="twitter:image" content="https://www.vaziodesignstudio.com/assets/botteghe/Frame3.png" />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/botteghe" />
       </Helmet>
 

@@ -4,117 +4,130 @@
 
 <!-- Homepage Images -->
 <url>
-  <loc>https://lucaslucas.work/</loc>
+  <loc>https://www.vaziodesignstudio.com/</loc>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/profile-lucas-moraes.jpg</image:loc>
-    <image:title>Lucas Moraes - Product Designer</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/home/worksupernova.png</image:loc>
+    <image:title>Supernova Entertainment - Branding e Direção de Arte | Vazio Design Studio</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/home/worksupernova.png</image:loc>
-    <image:title>Supernova Project</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/home/workbotteghe.png</image:loc>
+    <image:title>Botteghe Del Caffè - Branding e Direção de Arte | Vazio Design Studio</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/home/workbotteghe.png</image:loc>
-    <image:title>Botteghe Project</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/home/workbuddy.png</image:loc>
+    <image:title>Buddy Nutrition - Branding e Packaging | Vazio Design Studio</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/home/workbuddy.png</image:loc>
-    <image:title>Buddy Nutrition Project</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/home/worklata.png</image:loc>
+    <image:title>Lata 05 - Branding e Direção de Arte | Vazio Design Studio</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/home/worklata.png</image:loc>
-    <image:title>Lata Project</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/home/workclicks.png</image:loc>
+    <image:title>Clicks & Corres - Projeto Fotográfico Pessoal | Vazio Design Studio</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/home/workclicks.png</image:loc>
-    <image:title>Clicks Corres Project</image:title>
-  </image:image>
-  <image:image>
-    <image:loc>https://lucaslucas.work/assets/home/workbike.png</image:loc>
-    <image:title>Estadio 97 Project</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/home/workbike.png</image:loc>
+    <image:title>Estádio 97 - Branding e Direção de Arte | Vazio Design Studio</image:title>
   </image:image>
 </url>
 
 <!-- Supernova Page -->
 <url>
-  <loc>https://lucaslucas.work/supernova</loc>
+  <loc>https://www.vaziodesignstudio.com/supernova</loc>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/supernova/frame1.png</image:loc>
-    <image:title>Supernova Design</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/supernova/Frame2.png</image:loc>
+    <image:title>Supernova Entertainment - Identidade Visual</image:title>
   </image:image>
 </url>
 
 <!-- Botteghe Page -->
 <url>
-  <loc>https://lucaslucas.work/botteghe</loc>
+  <loc>https://www.vaziodesignstudio.com/botteghe</loc>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/botteghe/Frame3.png</image:loc>
-    <image:title>Botteghe Interface Design</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/botteghe/Frame3.png</image:loc>
+    <image:title>Botteghe Del Caffè - Identidade Visual</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/botteghe/Frame4.png</image:loc>
-    <image:title>Botteghe App Design</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/botteghe/Frame4.png</image:loc>
+    <image:title>Botteghe Del Caffè - Design de Embalagem</image:title>
   </image:image>
 </url>
 
 <!-- Buddy Nutrition Page -->
 <url>
-  <loc>https://lucaslucas.work/buddynutrition</loc>
+  <loc>https://www.vaziodesignstudio.com/buddynutrition</loc>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/buddy/frame1.png</image:loc>
-    <image:title>Buddy Nutrition App Design</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/buddy/frame1.png</image:loc>
+    <image:title>Buddy Nutrition - Design System</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/buddy/frame2.png</image:loc>
-    <image:title>Buddy Nutrition Interface</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/buddy/frame2.png</image:loc>
+    <image:title>Buddy Nutrition - Packaging</image:title>
   </image:image>
 </url>
 
 <!-- Lata Page -->
 <url>
-  <loc>https://lucaslucas.work/lata</loc>
+  <loc>https://www.vaziodesignstudio.com/lata</loc>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/lata/frame1.png</image:loc>
-    <image:title>Lata Design</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/lata/frame1.png</image:loc>
+    <image:title>Lata 05 - Identidade Visual</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/lata/frame2.jpg</image:loc>
-    <image:title>Lata Interface Design</image:title>
-  </image:image>
-</url>
-
-<!-- Clicks Corres Page -->
-<url>
-  <loc>https://lucaslucas.work/clickscorres</loc>
-  <image:image>
-    <image:loc>https://lucaslucas.work/assets/corres/frame1.jpg</image:loc>
-    <image:title>Clicks Corres Design</image:title>
-  </image:image>
-  <image:image>
-    <image:loc>https://lucaslucas.work/assets/corres/frames2.png</image:loc>
-    <image:title>Clicks Corres Interface</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/lata/frame2.jpg</image:loc>
+    <image:title>Lata 05 - Direção de Arte</image:title>
   </image:image>
 </url>
 
-<!-- Estadio 97 Page -->
+<!-- Clicks & Corres Page -->
 <url>
-  <loc>https://lucaslucas.work/estadio97</loc>
+  <loc>https://www.vaziodesignstudio.com/clickscorres</loc>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/estadio97/frame1.png</image:loc>
-    <image:title>Estadio 97 Design</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/corres/frame1.jpg</image:loc>
+    <image:title>Clicks & Corres - Fotografia</image:title>
   </image:image>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/estadio97/frame2.jpg</image:loc>
-    <image:title>Estadio 97 Interface</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/corres/frames2.png</image:loc>
+    <image:title>Clicks & Corres - Fotografia</image:title>
+  </image:image>
+</url>
+
+<!-- Estádio 97 Page -->
+<url>
+  <loc>https://www.vaziodesignstudio.com/estadio97</loc>
+  <image:image>
+    <image:loc>https://www.vaziodesignstudio.com/assets/estadio97/frame1.png</image:loc>
+    <image:title>Estádio 97 - Identidade Visual</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.vaziodesignstudio.com/assets/estadio97/frame2.jpg</image:loc>
+    <image:title>Estádio 97 - Direção de Arte</image:title>
   </image:image>
 </url>
 
 <!-- AstroPay Page -->
 <url>
-  <loc>https://lucaslucas.work/astropay</loc>
+  <loc>https://www.vaziodesignstudio.com/astropay</loc>
   <image:image>
-    <image:loc>https://lucaslucas.work/assets/astropay/frame1.png</image:loc>
-    <image:title>AstroPay Design</image:title>
+    <image:loc>https://www.vaziodesignstudio.com/assets/astropay/hero15.png</image:loc>
+    <image:title>AstroPay - Motion Graphics e Direção de Arte</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.vaziodesignstudio.com/assets/astropay/hero16.png</image:loc>
+    <image:title>AstroPay - Motion Graphics e Direção de Arte</image:title>
+  </image:image>
+</url>
+
+<!-- Pura Terapia Page -->
+<url>
+  <loc>https://www.vaziodesignstudio.com/pura-terapia</loc>
+  <image:image>
+    <image:loc>https://www.vaziodesignstudio.com/assets/pura-terapia/frame1.png</image:loc>
+    <image:title>Pura Terapia - Branding, Direção de Arte e Web Design</image:title>
+  </image:image>
+  <image:image>
+    <image:loc>https://www.vaziodesignstudio.com/assets/pura-terapia/frame2.png</image:loc>
+    <image:title>Pura Terapia - Site Institucional</image:title>
   </image:image>
 </url>
 

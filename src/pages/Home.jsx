@@ -170,15 +170,16 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Vazio Design Studio - Design & Art Direction | São Paulo, Brazil</title>
+        <title>Vazio Design Studio - Design & Direção de Arte | São Paulo, Brasil</title>
         <meta name="description" content="Vazio é um estúdio de design com propósito. Identidade visual, direção de arte e desenvolvimento de produto - São Paulo, Brasil." />
-        <meta property="og:title" content="Vazio Design Studio - Design & Art Direction" />
+        <meta property="og:title" content="Vazio Design Studio - Design & Direção de Arte" />
         <meta property="og:description" content="Estúdio de design com propósito. Identidade visual, direção de arte e desenvolvimento de produto." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/" />
-        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/og-image.jpg" />
+        <meta property="og:locale" content="pt_BR" />
+        {/* TODO: add public/assets/og-image.jpg (1200x630) and restore this tag */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Vazio Design Studio - Design & Art Direction" />
+        <meta name="twitter:title" content="Vazio Design Studio - Design & Direção de Arte" />
         <meta name="twitter:description" content="Estúdio de design com propósito - São Paulo, Brasil." />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/" />
       </Helmet>

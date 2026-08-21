@@ -12,13 +12,18 @@ const AstroPay = () => {
   return (
     <>
       <Helmet>
-        <title>AstroPay - Motion Graphics & Art Direction | Vazio Design Studio</title>
-        <meta name="description" content="Motion Graphics and Art Direction for AstroPay, a global digital payments company based in London with users across more than 150 countries, known for connecting people and businesses through fast, secure and accessible solutions." />
-        <meta property="og:title" content="AstroPay - Motion Graphics & Art Direction" />
-        <meta property="og:description" content="Motion Graphics for AstroPay, a global digital payments company connecting people and businesses through secure solutions." />
+        <title>AstroPay - Motion Graphics & Direção de Arte | Vazio Design Studio</title>
+        <meta name="description" content="Motion Graphics e Direção de Arte para a AstroPay, empresa global de pagamentos digitais sediada em Londres com usuários em mais de 150 países, reconhecida por conectar pessoas e empresas com soluções rápidas, seguras e acessíveis." />
+        <meta property="og:title" content="AstroPay - Motion Graphics & Direção de Arte" />
+        <meta property="og:description" content="Motion Graphics para a AstroPay, empresa global de pagamentos digitais que conecta pessoas e empresas com soluções seguras." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/astropay" />
+        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/astropay/hero15.png" />
+        <meta property="og:locale" content="pt_BR" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AstroPay - Motion Graphics & Direção de Arte" />
+        <meta name="twitter:description" content="Motion Graphics para a AstroPay, empresa global de pagamentos digitais." />
+        <meta name="twitter:image" content="https://www.vaziodesignstudio.com/assets/astropay/hero15.png" />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/astropay" />
       </Helmet>
 

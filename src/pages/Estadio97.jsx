@@ -13,13 +13,18 @@ const Estadio97 = () => {
   return (
     <>
       <Helmet>
-        <title>Estádio 97 - Sports Radio Branding & Art Direction | Vazio Design Studio</title>
-        <meta name="description" content="Branding and Art Direction for Estádio 97, one of Brazil's most traditional sports radio shows, a product of Energia 97 FM, celebrating 25 years of leading sports radio audiences." />
-        <meta property="og:title" content="Estádio 97 - Sports Radio Branding & Art Direction" />
-        <meta property="og:description" content="Branding for Estádio 97, one of Brazil's most traditional sports radio programs celebrating 25 years." />
+        <title>Estádio 97 - Branding & Direção de Arte para Rádio Esportiva | Vazio Design Studio</title>
+        <meta name="description" content="Branding e Direção de Arte para o Estádio 97, um dos programas de rádio esportiva mais tradicionais do Brasil, da Energia 97 FM, celebrando 25 anos como líder de audiência." />
+        <meta property="og:title" content="Estádio 97 - Branding & Direção de Arte para Rádio Esportiva" />
+        <meta property="og:description" content="Branding para o Estádio 97, um dos programas de rádio esportiva mais tradicionais do Brasil, celebrando 25 anos." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/estadio97" />
+        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/estadio97/frame1.png" />
+        <meta property="og:locale" content="pt_BR" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Estádio 97 - Branding & Direção de Arte para Rádio Esportiva" />
+        <meta name="twitter:description" content="Branding para o Estádio 97, tradicional programa de rádio esportiva celebrando 25 anos." />
+        <meta name="twitter:image" content="https://www.vaziodesignstudio.com/assets/estadio97/frame1.png" />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/estadio97" />
       </Helmet>
 

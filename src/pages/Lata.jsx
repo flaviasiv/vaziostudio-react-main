@@ -12,13 +12,18 @@ const Lata = () => {
   return (
     <>
       <Helmet>
-        <title>Lata 05 - Secret Event Branding & Art Direction | Vazio Design Studio</title>
-        <meta name="description" content="Branding and Art Direction for Lata 05, a secret event with no fixed location, date or theme, featuring invitation-only first editions and surprise performances as the main way to spark curiosity." />
-        <meta property="og:title" content="Lata 05 - Secret Event Branding & Art Direction" />
-        <meta property="og:description" content="Branding for Lata 05, a secret artistic movement bringing an overlap of musical genres to energize national art." />
+        <title>Lata 05 - Branding & Direção de Arte para Evento Secreto | Vazio Design Studio</title>
+        <meta name="description" content="Branding e Direção de Arte para o Lata 05, um evento secreto sem local, data ou tema fixos, com primeiras edições por convite e apresentações surpresa como principal forma de despertar curiosidade." />
+        <meta property="og:title" content="Lata 05 - Branding & Direção de Arte para Evento Secreto" />
+        <meta property="og:description" content="Branding para o Lata 05, movimento artístico secreto que traz uma mistura de gêneros musicais para energizar a arte nacional." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/lata" />
+        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/lata/frame1.png" />
+        <meta property="og:locale" content="pt_BR" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Lata 05 - Branding & Direção de Arte para Evento Secreto" />
+        <meta name="twitter:description" content="Branding para o Lata 05, movimento artístico secreto que mistura gêneros musicais." />
+        <meta name="twitter:image" content="https://www.vaziodesignstudio.com/assets/lata/frame1.png" />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/lata" />
       </Helmet>
 

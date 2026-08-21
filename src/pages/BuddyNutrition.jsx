@@ -16,12 +16,17 @@ const BuddyNutrition = () => {
     <>
       <Helmet>
         <title>Buddy Nutrition - Branding, Packaging & Design System | Vazio Design Studio</title>
-        <meta name="description" content="Branding, Packaging, and Design System for Buddy Nutrition, a canine supplement brand that creates high-quality formulas with personalized recommendations for pet health and well-being." />
+        <meta name="description" content="Branding, Packaging e Design System para a Buddy Nutrition, marca de suplementos caninos que cria fórmulas de alta qualidade com recomendações personalizadas para a saúde e bem-estar de pets." />
         <meta property="og:title" content="Buddy Nutrition - Branding, Packaging & Design System" />
-        <meta property="og:description" content="Complete branding project for Buddy Nutrition, a canine supplement brand with personalized recommendations." />
+        <meta property="og:description" content="Projeto completo de branding para a Buddy Nutrition, marca de suplementos caninos com recomendações personalizadas." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/buddynutrition" />
+        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/buddy/frame1.png" />
+        <meta property="og:locale" content="pt_BR" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Buddy Nutrition - Branding, Packaging & Design System" />
+        <meta name="twitter:description" content="Projeto completo de branding para a Buddy Nutrition, marca de suplementos caninos." />
+        <meta name="twitter:image" content="https://www.vaziodesignstudio.com/assets/buddy/frame1.png" />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/buddynutrition" />
       </Helmet>
 

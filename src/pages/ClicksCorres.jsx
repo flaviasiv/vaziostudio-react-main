@@ -12,13 +12,18 @@ const ClicksCorres = () => {
   return (
     <>
       <Helmet>
-        <title>Clicks & Corres - Personal Photography Project | Vazio Design Studio</title>
-        <meta name="description" content="Personal photography project documenting running during COVID-19 pandemic. All footage was captured on a phone over months of running the same route in the north side of São Paulo." />
-        <meta property="og:title" content="Clicks & Corres - Personal Photography Project" />
-        <meta property="og:description" content="Photography project documenting running during COVID-19 pandemic in São Paulo." />
+        <title>Clicks & Corres - Projeto Fotográfico Pessoal | Vazio Design Studio</title>
+        <meta name="description" content="Projeto fotográfico pessoal documentando corridas durante a pandemia de COVID-19. Todo o material foi capturado no celular ao longo de meses correndo a mesma rota na zona norte de São Paulo." />
+        <meta property="og:title" content="Clicks & Corres - Projeto Fotográfico Pessoal" />
+        <meta property="og:description" content="Projeto fotográfico documentando corridas durante a pandemia de COVID-19 em São Paulo." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/clickscorres" />
+        <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/corres/frame1.jpg" />
+        <meta property="og:locale" content="pt_BR" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Clicks & Corres - Projeto Fotográfico Pessoal" />
+        <meta name="twitter:description" content="Projeto fotográfico documentando corridas durante a pandemia em São Paulo." />
+        <meta name="twitter:image" content="https://www.vaziodesignstudio.com/assets/corres/frame1.jpg" />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/clickscorres" />
       </Helmet>
 

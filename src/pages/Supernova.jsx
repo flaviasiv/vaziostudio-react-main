@@ -12,14 +12,18 @@ const Supernova = () => {
   return (
     <>
       <Helmet>
-        <title>Supernova Entertainment - Branding & Art Direction | Vazio Design Studio</title>
-        <meta name="description" content="Branding and Art Direction for Supernova Entertainment, a music label in São Paulo marked by the astronomical rise of its artists, including Thiago Veigh who reached global top 1 on Spotify." />
-        <meta property="og:title" content="Supernova Entertainment - Branding & Art Direction" />
-        <meta property="og:description" content="Branding and Art Direction for Supernova Entertainment, a music label in São Paulo marked by the astronomical rise of its artists." />
+        <title>Supernova Entertainment - Branding & Direção de Arte | Vazio Design Studio</title>
+        <meta name="description" content="Branding e Direção de Arte para a Supernova Entertainment, um selo musical de São Paulo marcado pela ascensão astronômica de seus artistas, incluindo Thiago Veigh, que alcançou o top 1 global no Spotify." />
+        <meta property="og:title" content="Supernova Entertainment - Branding & Direção de Arte" />
+        <meta property="og:description" content="Branding e Direção de Arte para a Supernova Entertainment, um selo musical de São Paulo marcado pela ascensão astronômica de seus artistas." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.vaziodesignstudio.com/supernova" />
         <meta property="og:image" content="https://www.vaziodesignstudio.com/assets/supernova/Frame2.png" />
+        <meta property="og:locale" content="pt_BR" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Supernova Entertainment - Branding & Direção de Arte" />
+        <meta name="twitter:description" content="Branding e Direção de Arte para a Supernova Entertainment, selo musical de São Paulo." />
+        <meta name="twitter:image" content="https://www.vaziodesignstudio.com/assets/supernova/Frame2.png" />
         <link rel="canonical" href="https://www.vaziodesignstudio.com/supernova" />
       </Helmet>
 
