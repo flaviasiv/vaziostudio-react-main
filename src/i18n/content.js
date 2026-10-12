@@ -5,9 +5,9 @@ export const content = {
   en: {
     htmlLang: 'en',
     meta: {
-      title: 'Vazio Design Studio | Brand Identity, Web Design & Development',
+      title: 'Vazio Design Studio | Brand Strategy, Identity & Web Design',
       description:
-        'Vazio is a small design studio in São Paulo, Brazil. We create brand identities, design and build websites, and automate WhatsApp service.',
+        'Vazio is a brand strategy studio in São Paulo, Brazil. We define what a brand stands for, then design its identity, build its website and automate its service.',
     },
     skip: 'Skip to content',
     loading: 'Loading',
@@ -22,7 +22,7 @@ export const content = {
     },
     hero: {
       lines: ['Building brands', 'that work.'],
-      sub: 'Design studio in São Paulo. We create the identity, build the site and automate the conversation that follows.',
+      sub: 'Brand strategy studio in São Paulo. We define what a brand stands for, then design and build everything it needs.',
       cta: 'See our work',
       faceAlt: 'Smiling face that follows your cursor',
     },
@@ -40,11 +40,11 @@ export const content = {
     },
     about: {
       statement:
-        'We are a small studio in São Paulo. One team takes a brand from the first sketch to a live site, and to the tools that keep it running.',
+        'We are a brand strategy studio in São Paulo. We start with what the brand stands for, then take it to a live site and the tools that keep it running.',
       services: [
+        { name: 'Brand strategy', text: 'Positioning, audience and voice, defined before any design starts.' },
         { name: 'Brand identity', text: 'Logo, color and type that hold up on every screen.' },
-        { name: 'UI/UX design', text: 'Interfaces planned around what people need to do next.' },
-        { name: 'Web development', text: 'Fast sites that are easy to maintain, in as many languages as you need.' },
+        { name: 'Web design and development', text: 'Interfaces planned around what people need to do next, built to be fast and easy to maintain.' },
         { name: 'WhatsApp automation', text: 'Bookings, payments and reminders handled in the chat, so your team can talk to people.' },
       ],
     },
@@ -192,9 +192,9 @@ export const content = {
   pt: {
     htmlLang: 'pt-BR',
     meta: {
-      title: 'Vazio Design Studio | Identidade Visual, Web Design e Desenvolvimento',
+      title: 'Vazio Design Studio | Estratégia de Marca, Identidade e Web Design',
       description:
-        'Vazio é um pequeno estúdio de design em São Paulo. Criamos identidades visuais, desenhamos e desenvolvemos sites e automatizamos o atendimento por WhatsApp.',
+        'Vazio é um estúdio de estratégia de marca em São Paulo. Definimos o que a marca defende e depois criamos a identidade, desenvolvemos o site e automatizamos o atendimento.',
     },
     skip: 'Ir para o conteúdo',
     loading: 'Carregando',
@@ -209,7 +209,7 @@ export const content = {
     },
     hero: {
       lines: ['Construindo marcas', 'que funcionam.'],
-      sub: 'Estúdio de design em São Paulo. Criamos a identidade, desenvolvemos o site e automatizamos a conversa que vem depois.',
+      sub: 'Estúdio de estratégia de marca em São Paulo. Definimos o que a marca defende e depois desenhamos e construímos tudo o que ela precisa.',
       cta: 'Ver trabalhos',
       faceAlt: 'Rosto sorridente que acompanha o cursor',
     },
@@ -227,11 +227,11 @@ export const content = {
     },
     about: {
       statement:
-        'Somos um estúdio pequeno de São Paulo. Um só time leva a marca do primeiro rascunho ao site no ar, e às ferramentas que o mantêm funcionando.',
+        'Somos um estúdio de estratégia de marca em São Paulo. Começamos pelo que a marca defende e a levamos até o site no ar e às ferramentas que o mantêm funcionando.',
       services: [
+        { name: 'Estratégia de marca', text: 'Posicionamento, público e voz, definidos antes de qualquer design.' },
         { name: 'Identidade visual', text: 'Logo, cores e tipografia que se sustentam em qualquer tela.' },
-        { name: 'Design UI/UX', text: 'Interfaces pensadas no que a pessoa precisa fazer em seguida.' },
-        { name: 'Desenvolvimento web', text: 'Sites rápidos e fáceis de manter, em quantos idiomas você precisar.' },
+        { name: 'Web design e desenvolvimento', text: 'Interfaces pensadas no que a pessoa precisa fazer em seguida, feitas para serem rápidas e fáceis de manter.' },
         { name: 'Automação de WhatsApp', text: 'Agendamento, pagamento e lembretes resolvidos no chat, para o time conversar com as pessoas.' },
       ],
     },
