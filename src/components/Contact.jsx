@@ -1,4 +1,5 @@
 import { ArrowUpRight } from '@phosphor-icons/react';
+import { Link } from 'react-router-dom';
 import Reveal from './Reveal';
 import { useLang } from '../i18n/useLang';
 import '../styles/contact.css';
@@ -24,7 +25,7 @@ export default function Contact() {
       <div className="contact__bar">
         <span>{t.contact.rights}</span>
         <span>{t.contact.place}</span>
-        <a href="#top">{t.contact.top}</a>
+        <Link to={{ hash: '#top' }}>{t.contact.top}</Link>
       </div>
     </footer>
   );

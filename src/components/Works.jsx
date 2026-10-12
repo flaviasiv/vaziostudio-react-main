@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ArrowUpRight } from '@phosphor-icons/react';
 import Reveal from './Reveal';
 import { projects } from '../data/projects';
@@ -6,6 +7,7 @@ import '../styles/works.css';
 
 function WorkBody({ project, index }) {
   const { t } = useLang();
+  const alt = t.cases[project.slug]?.cardAlt ?? t.work.alt(index + 1);
   return (
     <>
       <div className="work__media">
@@ -13,7 +15,7 @@ function WorkBody({ project, index }) {
           src={project.image}
           width={project.width}
           height={project.height}
-          alt={t.work.alt(index + 1)}
+          alt={alt}
           loading="lazy"
           draggable="false"
         />
@@ -38,10 +40,10 @@ export default function Works() {
       <div className="works__grid">
         {projects.map((p, i) => (
           <Reveal key={p.id} className="work-slot">
-            {p.href ? (
-              <a href={p.href} className="work">
+            {p.slug ? (
+              <Link to={`/work/${p.slug}`} className="work">
                 <WorkBody project={p} index={i} />
-              </a>
+              </Link>
             ) : (
               <article className="work" tabIndex={0}>
                 <WorkBody project={p} index={i} />

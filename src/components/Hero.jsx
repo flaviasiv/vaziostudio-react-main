@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowDown } from '@phosphor-icons/react';
 import Face from './Face';
 import { useLang } from '../i18n/useLang';
 import '../styles/hero.css';
+
+const MotionLink = motion.create(Link);
 
 export default function Hero({ ready }) {
   const { t } = useLang();
@@ -27,7 +30,7 @@ export default function Hero({ ready }) {
   };
 
   return (
-    <section id="top" className="hero container">
+    <section id="hero" className="hero container">
       <div className="hero__main">
       <h1 className="hero__title" aria-label={lines.join(' ')}>
         {lines.map((text, i) => (
@@ -48,8 +51,8 @@ export default function Hero({ ready }) {
         <motion.p className="hero__sub" custom={0.45} variants={fade} initial="hide" animate={state}>
           {t.hero.sub}
         </motion.p>
-        <motion.a
-          href="#work"
+        <MotionLink
+          to={{ hash: '#work' }}
           className="hero__cta"
           custom={0.6}
           variants={fade}
@@ -58,7 +61,7 @@ export default function Hero({ ready }) {
         >
           {t.hero.cta}
           <ArrowDown size={18} weight="regular" aria-hidden="true" />
-        </motion.a>
+        </MotionLink>
       </div>
     </section>
   );

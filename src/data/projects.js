@@ -1,12 +1,23 @@
-// TODO: substituir por projetos reais. Título e alt por idioma entram no content.js; category usa as chaves de work.categories.
-// Sem `href`, o card não é clicável.
+// Projetos da home. Com `slug`, o card abre /work/:slug e usa o texto de content.js (cases).
+// Sem `slug`, é um placeholder: TODO substituir por projetos reais.
 export const projects = [
   {
-    id: 'a',
-    category: 'identity',
-    image: 'https://picsum.photos/seed/vazio-studio-a/1400/1050?grayscale',
-    width: 1400,
-    height: 1050,
+    id: 'matarasso',
+    slug: 'matarasso',
+    title: 'Matarasso Advogados',
+    category: 'identityWeb',
+    image: '/work/matarasso/hero.webp',
+    width: 1440,
+    height: 800,
+  },
+  {
+    id: 'puraterapia',
+    slug: 'puraterapia',
+    title: 'PuraTerapia',
+    category: 'identityWeb',
+    image: '/work/puraterapia/thumb.webp',
+    width: 1000,
+    height: 1250,
   },
   {
     id: 'b',
