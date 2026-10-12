@@ -1,131 +1,47 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useEffect, useState, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { useCallback, useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
+import Loader from './components/Loader';
+import { loaderAlreadySeen } from './utils/loaderSeen';
+import Cursor from './components/Cursor';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Supernova from './pages/Supernova';
-import Botteghe from './pages/Botteghe';
-import BuddyNutrition from './pages/BuddyNutrition';
-import Lata from './pages/Lata';
-import ClicksCorres from './pages/ClicksCorres';
-import Estadio97 from './pages/Estadio97';
-import AstroPay from './pages/AstroPay';
-import PuraTerapia from './pages/PuraTerapia';
+import Hero from './components/Hero';
+import Works from './components/Works';
+import About from './components/About';
+import Contact from './components/Contact';
+import { useLang } from './i18n/useLang';
 
-function ScrollToTop({ lenisRef }) {
-  const { pathname } = useLocation();
+export default function App() {
+  const { t } = useLang();
+  const [seen] = useState(loaderAlreadySeen);
+  const [ready, setReady] = useState(seen);
+  const reveal = useCallback(() => setReady(true), []);
 
+  // trava o scroll enquanto o loading está na tela
   useEffect(() => {
-    if (lenisRef.current) {
-      lenisRef.current.scrollTo(0, { immediate: true });
-    } else {
-      window.scrollTo(0, 0);
-    }
-  }, [pathname]);
+    document.documentElement.classList.toggle('is-loading', !seen && !ready);
+    return () => document.documentElement.classList.remove('is-loading');
+  }, [seen, ready]);
 
-  return null;
-}
-
-function AppContent({ theme, toggleTheme }) {
-  const lenisRef = useRef(null);
-
+  // scroll suave com inércia; âncoras do menu passam pelo Lenis
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-      smoothTouch: false,
-      touchMultiplier: 2,
-      lerp: 0.12,
-    });
-
-    lenisRef.current = lenis;
-
-    const handleKeyScroll = (e) => {
-      const tag = document.activeElement?.tagName;
-      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
-
-      const scrollY = window.scrollY;
-      const pageH = window.innerHeight;
-      const docH = document.body.scrollHeight;
-
-      switch (e.key) {
-        case 'End':
-          e.preventDefault();
-          lenis.scrollTo(docH);
-          break;
-        case 'Home':
-          e.preventDefault();
-          lenis.scrollTo(0);
-          break;
-        case 'PageDown':
-          e.preventDefault();
-          lenis.scrollTo(scrollY + pageH);
-          break;
-        case 'PageUp':
-          e.preventDefault();
-          lenis.scrollTo(scrollY - pageH);
-          break;
-        default:
-          break;
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyScroll);
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyScroll);
-      lenis.destroy();
-    };
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined;
+    const lenis = new Lenis({ autoRaf: true, anchors: true, lerp: 0.1 });
+    return () => lenis.destroy();
   }, []);
 
   return (
     <>
-      <ScrollToTop lenisRef={lenisRef} />
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/supernova" element={<Supernova />} />
-        <Route path="/botteghe" element={<Botteghe />} />
-        <Route path="/buddynutrition" element={<BuddyNutrition />} />
-        <Route path="/lata" element={<Lata />} />
-        <Route path="/clickscorres" element={<ClicksCorres />} />
-        <Route path="/estadio97" element={<Estadio97 />} />
-        <Route path="/astropay" element={<AstroPay />} />
-        <Route path="/pura-terapia" element={<PuraTerapia />} />
-      </Routes>
-      <Footer />
+      <a href="#work" className="skip-link">{t.skip}</a>
+      {!seen && <Loader onReveal={reveal} />}
+      <Cursor />
+      <Header />
+      <main>
+        <Hero ready={ready} />
+        <Works />
+        <About />
+      </main>
+      <Contact />
     </>
   );
 }
-
-function App() {
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
-  const toggleTheme = () => setTheme(prev => prev === 'dark' ? 'light' : 'dark');
-
-  return (
-    <HelmetProvider>
-      <Router>
-        <AppContent theme={theme} toggleTheme={toggleTheme} />
-      </Router>
-    </HelmetProvider>
-  );
-}
-
-export default App;

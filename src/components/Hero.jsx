@@ -1,93 +1,65 @@
-const copy = {
-  pt: {
-    label: 'EST. 2021 - SÃO PAULO, BR',
-    subtitle: 'Estúdio de design que cria\nmarcas com intenção.',
-    cta: '→ Ver projetos',
-  },
-  en: {
-    label: 'EST. 2021 - SÃO PAULO, BR',
-    subtitle: 'A design studio that builds\nbrands with intention.',
-    cta: '→ View projects',
-  },
-}
+import { motion, useReducedMotion } from 'framer-motion';
+import { ArrowDown } from '@phosphor-icons/react';
+import Face from './Face';
+import { useLang } from '../i18n/useLang';
+import '../styles/hero.css';
 
-const letters = ['V', 'A', 'Z', 'I', 'O']
+export default function Hero({ ready }) {
+  const { t } = useLang();
+  const lines = t.hero.lines;
+  const reduce = useReducedMotion();
+  const state = ready ? 'show' : 'hide';
 
-export default function Hero({ lang }) {
-  const t = copy[lang]
+  const line = {
+    hide: { y: reduce ? 0 : '110%' },
+    show: (i) => ({
+      y: 0,
+      transition: { duration: reduce ? 0 : 1, ease: [0.16, 1, 0.3, 1], delay: i * 0.1 },
+    }),
+  };
+  const fade = {
+    hide: { opacity: 0, y: reduce ? 0 : 16 },
+    show: (d) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: reduce ? 0 : 0.8, ease: [0.16, 1, 0.3, 1], delay: d },
+    }),
+  };
 
   return (
-    <section
-      id="hero"
-      style={{ minHeight: '100svh' }}
-      className="relative flex flex-col justify-between px-6 md:px-12 pt-40 pb-16"
-    >
-      {/* Label */}
-      <span
-        className="section-label fade-up"
-        style={{ animationDelay: '0.1s' }}
-      >
-        {t.label}
-      </span>
+    <section id="top" className="hero container">
+      <div className="hero__main">
+      <h1 className="hero__title" aria-label={lines.join(' ')}>
+        {lines.map((text, i) => (
+          <span className="hero__line" key={text} aria-hidden="true">
+            <motion.span custom={i} variants={line} initial="hide" animate={state}>
+              {text}
+            </motion.span>
+          </span>
+        ))}
+      </h1>
 
-      {/* Giant VAZIO */}
-      <div className="flex-1 flex items-center justify-center py-8">
-        <h1
-          style={{
-            fontFamily: "'DM Serif Display', serif",
-            fontSize: 'clamp(18vw, 22vw, 308px)',
-            lineHeight: 1,
-            letterSpacing: '-0.01em',
-            color: 'var(--color-accent)',
-            userSelect: 'none',
-            whiteSpace: 'nowrap',
-          }}
-          aria-label="VAZIO"
-        >
-          {letters.map((l, i) => (
-            <span
-              key={i}
-              className="hero-letter"
-              style={{ animationDelay: `${0.05 + i * 0.08}s` }}
-            >
-              {l}
-            </span>
-          ))}
-        </h1>
+      <motion.div className="hero__face" custom={0.5} variants={fade} initial="hide" animate={state}>
+        <Face alt={t.hero.faceAlt} />
+      </motion.div>
       </div>
 
-      {/* Subtitle + CTA */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
-        <p
-          className="fade-up"
-          style={{
-            fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
-            color: 'var(--color-text)',
-            whiteSpace: 'pre-line',
-            lineHeight: 1.35,
-            animationDelay: '0.55s',
-          }}
+      <div className="hero__foot">
+        <motion.p className="hero__sub" custom={0.45} variants={fade} initial="hide" animate={state}>
+          {t.hero.sub}
+        </motion.p>
+        <motion.a
+          href="#work"
+          className="hero__cta"
+          custom={0.6}
+          variants={fade}
+          initial="hide"
+          animate={state}
         >
-          {t.subtitle}
-        </p>
-
-        <a
-          href="#projetos"
-          className="fade-up group flex items-center gap-3 self-start md:self-auto"
-          style={{
-            fontFamily: "'Syne Mono', monospace",
-            fontSize: '0.9rem',
-            letterSpacing: '0.05em',
-            color: 'var(--color-highlight)',
-            animationDelay: '0.7s',
-            transition: 'opacity 0.2s',
-          }}
-          onMouseEnter={e => (e.currentTarget.style.opacity = '0.65')}
-          onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
-        >
-          {t.cta}
-        </a>
+          {t.hero.cta}
+          <ArrowDown size={18} weight="regular" aria-hidden="true" />
+        </motion.a>
       </div>
     </section>
-  )
+  );
 }
