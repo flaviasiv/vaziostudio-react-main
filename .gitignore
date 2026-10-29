@@ -28,3 +28,7 @@ dist-ssr
 *-mcp/
 .mcp/
 .claude/
+
+# Vercel / env
+.vercel
+.env*

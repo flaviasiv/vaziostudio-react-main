@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" fill="#0A0A0A"/>
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle"
-    font-family="serif" font-size="22" font-weight="700" fill="#E8E0D0"
-    letter-spacing="-1">V</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="58" fill="#f2552c"/>
+  <circle cx="42" cy="50" r="11" fill="#fff"/>
+  <circle cx="78" cy="50" r="11" fill="#fff"/>
+  <circle cx="42" cy="50" r="5" fill="#0f1011"/>
+  <circle cx="78" cy="50" r="5" fill="#0f1011"/>
+  <path d="M34 78c6 12 15 17 26 17s20-5 26-17" fill="none" stroke="#0f1011" stroke-width="5" stroke-linecap="round"/>
 </svg>
