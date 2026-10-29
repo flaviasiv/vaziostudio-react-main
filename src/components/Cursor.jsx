@@ -1,59 +1,43 @@
-import { useEffect, useRef } from 'react';
-import '../styles/cursor.css';
+import { useEffect, useState } from 'react';
+import { motion, useMotionValue, useSpring } from 'motion/react';
 
-/* Seguidor em negativo (ref: Monopo). O cursor nativo continua visível. */
+/* Ponto que segue o ponteiro e vira um círculo com rótulo sobre elementos [data-cursor] (ref: Monopo).
+   Só com ponteiro fino e sem movimento reduzido. O cursor nativo continua visível. */
 export default function Cursor() {
-  const ref = useRef(null);
+  const [enabled] = useState(
+    () =>
+      window.matchMedia('(hover: hover) and (pointer: fine)').matches &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  );
+  const [label, setLabel] = useState('');
+  const x = useMotionValue(-100);
+  const y = useMotionValue(-100);
+  const sx = useSpring(x, { stiffness: 500, damping: 40, mass: 0.4 });
+  const sy = useSpring(y, { stiffness: 500, damping: 40, mass: 0.4 });
 
   useEffect(() => {
-    const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const el = ref.current;
-    if (!fine || !el) return undefined;
+    if (!enabled) return undefined;
 
-    let x = -100;
-    let y = -100;
-    let cx = x;
-    let cy = y;
-    let frame;
-
-    const onMove = (e) => {
-      x = e.clientX;
-      y = e.clientY;
-      el.classList.add('cursor--on');
-      const t = e.target.closest?.('[data-cursor], a, button');
-      el.dataset.mode = t ? t.dataset.cursor || 'link' : '';
+    const move = (e) => {
+      x.set(e.clientX);
+      y.set(e.clientY);
     };
-    const onLeave = () => el.classList.remove('cursor--on');
-
-    const loop = () => {
-      const k = reduced ? 1 : 0.18;
-      cx += (x - cx) * k;
-      cy += (y - cy) * k;
-      el.style.transform = `translate3d(${cx}px, ${cy}px, 0)`;
-      frame = requestAnimationFrame(loop);
+    const over = (e) => {
+      const el = e.target instanceof Element ? e.target.closest('[data-cursor]') : null;
+      setLabel(el ? el.getAttribute('data-cursor') : '');
     };
-    frame = requestAnimationFrame(loop);
-
-    window.addEventListener('pointermove', onMove, { passive: true });
-    document.documentElement.addEventListener('mouseleave', onLeave);
+    window.addEventListener('pointermove', move, { passive: true });
+    document.addEventListener('pointerover', over, { passive: true });
     return () => {
-      cancelAnimationFrame(frame);
-      window.removeEventListener('pointermove', onMove);
-      document.documentElement.removeEventListener('mouseleave', onLeave);
+      window.removeEventListener('pointermove', move);
+      document.removeEventListener('pointerover', over);
     };
-  }, []);
+  }, [enabled, x, y]);
 
+  if (!enabled) return null;
   return (
-    <div ref={ref} className="cursor" aria-hidden="true">
-      <div className="cursor__shape">
-        <svg className="cursor__smile" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
-          <circle cx="12" cy="12" r="10.5" />
-          <circle cx="8.5" cy="9.5" r="0.7" fill="currentColor" stroke="none" />
-          <circle cx="15.5" cy="9.5" r="0.7" fill="currentColor" stroke="none" />
-          <path d="M7.5 14.5c1 1.8 2.6 2.7 4.5 2.7s3.5-.9 4.5-2.7" />
-        </svg>
-      </div>
-    </div>
+    <motion.div className={`cursor${label ? ' cursor--label' : ''}`} style={{ x: sx, y: sy }} aria-hidden="true">
+      <span>{label}</span>
+    </motion.div>
   );
 }

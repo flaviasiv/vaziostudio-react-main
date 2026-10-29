@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import '@fontsource-variable/geist';
-import '@fontsource-variable/geist-mono';
-import './styles/global.css';
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource-variable/instrument-sans';
+import './styles.css';
 import App from './App.jsx';
-import LangProvider from './i18n/LangContext.jsx';
+import { LangProvider } from './i18n/LangContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

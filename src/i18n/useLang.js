@@ -1,5 +1,6 @@
-import { createContext, useContext } from 'react';
+import { useContext } from 'react';
+import { LangContext } from './context';
 
-export const LangContext = createContext(null);
-
-export const useLang = () => useContext(LangContext);
+export function useLang() {
+  return useContext(LangContext);
+}

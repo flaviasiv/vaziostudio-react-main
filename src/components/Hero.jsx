@@ -1,24 +1,16 @@
-import { Link } from 'react-router-dom';
-import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowDown } from '@phosphor-icons/react';
-import Face from './Face';
+import { motion, useReducedMotion } from 'motion/react';
+import { ArrowRight } from '@phosphor-icons/react';
 import { useLang } from '../i18n/useLang';
-import '../styles/hero.css';
-
-const MotionLink = motion.create(Link);
+import HandMark from './HandMark';
 
 export default function Hero({ ready }) {
   const { t } = useLang();
-  const lines = t.hero.lines;
   const reduce = useReducedMotion();
   const state = ready ? 'show' : 'hide';
 
-  const line = {
-    hide: { y: reduce ? 0 : '110%' },
-    show: (i) => ({
-      y: 0,
-      transition: { duration: reduce ? 0 : 1, ease: [0.16, 1, 0.3, 1], delay: i * 0.1 },
-    }),
+  const rise = {
+    hide: { y: reduce ? 0 : '105%' },
+    show: { y: 0, transition: { duration: reduce ? 0 : 1, ease: [0.16, 1, 0.3, 1] } },
   };
   const fade = {
     hide: { opacity: 0, y: reduce ? 0 : 16 },
@@ -30,38 +22,30 @@ export default function Hero({ ready }) {
   };
 
   return (
-    <section id="hero" className="hero container">
-      <div className="hero__main">
-      <h1 className="hero__title" aria-label={lines.join(' ')}>
-        {lines.map((text, i) => (
-          <span className="hero__line" key={text} aria-hidden="true">
-            <motion.span custom={i} variants={line} initial="hide" animate={state}>
-              {text}
-            </motion.span>
-          </span>
-        ))}
-      </h1>
-
-      <motion.div className="hero__face" custom={0.5} variants={fade} initial="hide" animate={state}>
-        <Face alt={t.hero.faceAlt} />
-      </motion.div>
+    <section id="top" className="hero container">
+      <div className="hero__hand-fallback" aria-hidden="true">
+        <HandMark />
       </div>
-
+      <h1 className="hero__title">
+        <span className="hero__mask">
+          <motion.span variants={rise} initial="hide" animate={state} className="hero__text">
+            {t.hero.title}
+          </motion.span>
+        </span>
+      </h1>
       <div className="hero__foot">
-        <motion.p className="hero__sub" custom={0.45} variants={fade} initial="hide" animate={state}>
+        <motion.p className="hero__sub" custom={0.35} variants={fade} initial="hide" animate={state}>
           {t.hero.sub}
         </motion.p>
-        <MotionLink
-          to={{ hash: '#work' }}
-          className="hero__cta"
-          custom={0.6}
-          variants={fade}
-          initial="hide"
-          animate={state}
-        >
-          {t.hero.cta}
-          <ArrowDown size={18} weight="regular" aria-hidden="true" />
-        </MotionLink>
+        <motion.div className="hero__ctas" custom={0.5} variants={fade} initial="hide" animate={state}>
+          <a href="#contact" className="btn btn--solid">
+            {t.cta}
+            <ArrowRight size={18} weight="regular" aria-hidden="true" />
+          </a>
+          <a href="#work" className="btn btn--line">
+            {t.hero.work}
+          </a>
+        </motion.div>
       </div>
     </section>
   );

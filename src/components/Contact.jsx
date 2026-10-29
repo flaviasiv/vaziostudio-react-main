@@ -1,8 +1,6 @@
 import { ArrowUpRight } from '@phosphor-icons/react';
-import { Link } from 'react-router-dom';
 import Reveal from './Reveal';
 import { useLang } from '../i18n/useLang';
-import '../styles/contact.css';
 
 const EMAIL = 'flavia@vaziodesignstudio.com';
 
@@ -13,19 +11,16 @@ export default function Contact() {
       <Reveal as="h2" className="contact__title">
         {t.contact.title}
       </Reveal>
-
-      <Reveal>
-        <a href={`mailto:${EMAIL}`} className="contact__mail" data-cursor="smile">
-          {EMAIL}
-          <ArrowUpRight size={32} aria-hidden="true" />
+      <Reveal delay={0.1}>
+        <a href={`mailto:${EMAIL}`} className="contact__cta" data-cursor="Mail">
+          {t.cta}
+          <ArrowUpRight size={40} aria-hidden="true" />
         </a>
-        <p className="contact__note">{t.contact.note}</p>
       </Reveal>
-
       <div className="contact__bar">
         <span>{t.contact.rights}</span>
         <span>{t.contact.place}</span>
-        <Link to={{ hash: '#top' }}>{t.contact.top}</Link>
+        <a href="#top">{t.contact.top}</a>
       </div>
     </footer>
   );

@@ -1,35 +1,29 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useLang } from '../i18n/useLang';
-import '../styles/header.css';
+import HandMark from './HandMark';
 
 export default function Header() {
   const { t, toggle } = useLang();
-  const links = [
-    { to: { pathname: '/', hash: '#work' }, label: t.nav.work },
-    { to: { pathname: '/', hash: '#about' }, label: t.nav.about },
-    { to: { hash: '#contact' }, label: t.nav.contact },
-  ];
-
   return (
-    <header className="header" id="top">
-      <div className="header__inner">
+    <header className="header">
+      <div className="header__bar container">
         <Link to="/" className="header__logo" aria-label={t.nav.home}>
+          <HandMark className="header__hand" />
           Vazio
         </Link>
-        <nav aria-label={t.nav.aria}>
-          <ul className="header__nav">
-            {links.map((l) => (
-              <li key={l.label}>
-                <Link to={l.to}>{l.label}</Link>
-              </li>
-            ))}
-            <li>
-              <button type="button" className="header__lang" onClick={toggle} aria-label={t.nav.switchLabel}>
-                {t.nav.switchTo}
-              </button>
-            </li>
-          </ul>
+        <nav className="header__nav" aria-label={t.nav.aria}>
+          <NavLink to="/works">{t.nav.work}</NavLink>
+          <Link to="/#method">{t.nav.method}</Link>
+          <Link to="/#faq">{t.nav.faq}</Link>
         </nav>
+        <div className="header__actions">
+          <a href="#contact" className="btn btn--solid btn--small">
+            {t.cta}
+          </a>
+          <button type="button" className="header__lang" onClick={toggle} aria-label={t.nav.switchLabel}>
+            {t.nav.switchTo}
+          </button>
+        </div>
       </div>
     </header>
   );
